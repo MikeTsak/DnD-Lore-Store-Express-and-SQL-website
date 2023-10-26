@@ -4,17 +4,25 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>D&D Lore</title>
+  <link rel="stylesheet" href="styles.css">
+  <title>D&D Lore Site</title>
 </head>
 <body>
-  <h1>Dungeons & Dragons Lore</h1>
-  <div>
-    <input type="text" id="title" placeholder="Title">
-    <textarea id="content" placeholder="Content"></textarea>
-    <button onclick="addLore()">Add Lore</button>
+  <div id="app">
+    <header>
+      <h1>D&D Lore Repository</h1>
+      <button id="loginButton">Login</button>
+    </header>
+    <div id="content">
+      <div id="loreList"></div>
+      <div id="addLoreForm" class="hidden">
+        <h2>Add New Lore</h2>
+        <input type="text" id="title" placeholder="Title" />
+        <textarea id="content" placeholder="Content"></textarea>
+        <button onclick="addLore()">Add Lore</button>
+      </div>
+    </div>
   </div>
-  <div id="lore-list"></div>
-
-  <script src="app.js"></script>
+  <script src="scripts.js"></script>
 </body>
 </html>
